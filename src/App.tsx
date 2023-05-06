@@ -1,25 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-function App() {
+// components
+import Dashboard from "./components/Dashboard/Dashboard";
+import Table from "./components/Table/Table";
+import InfoChart from "./components/InfoChart/InfoChart";
+import SharedLayout from "./components/SharedLayout/SharedLayout";
+
+function App(): JSX.Element {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<SharedLayout />}>
+          <Route index element={<Dashboard />} />
+          <Route path='users' element={<Table />} />
+          <Route path='info-chart' element={<InfoChart />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
