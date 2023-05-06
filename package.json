@@ -29,7 +29,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "nodemon src/api.ts",
+    "dev": "concurrently \"npm run start\" \"npm run server\""
   },
   "type": "module",
   "devDependencies": {
