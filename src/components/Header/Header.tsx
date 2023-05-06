@@ -8,7 +8,7 @@ import { useMobileWidth } from "../../hooks/useMobileWidth";
 import styles from "./Header.module.css";
 
 // svg
-import Menu from "../../svg/Menu";
+import { Menu } from "../../svg";
 
 // types
 interface NavItem {

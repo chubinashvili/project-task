@@ -5,13 +5,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import axios, { AxiosResponse } from "axios";
 
 // store
-import useStore, { TableData } from "./store/store";
+import { TableData, useStore } from "./store";
 
 // components
-import Dashboard from "./components/Dashboard/Dashboard";
-import Table from "./components/Table/Table";
-import InfoChart from "./components/InfoChart/InfoChart";
-import SharedLayout from "./components/SharedLayout/SharedLayout";
+import { Dashboard, Table, InfoChart, SharedLayout } from "./components";
 
 function App(): JSX.Element {
   const { setTableData } = useStore();

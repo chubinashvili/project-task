@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { Pie } from "@ant-design/charts";
 
 // store
-import useStore from "../../store/store";
+import { useStore } from "../../store";
 
 // styles
 import styles from "./InfoChart.module.css";

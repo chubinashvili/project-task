@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 
 // components
-import Header from "../Header/Header";
+import { Header } from "../";
 
 const SharedLayout: React.FC = () => {
   return (

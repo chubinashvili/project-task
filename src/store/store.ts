@@ -24,7 +24,7 @@ interface MyStoreActions {
 
 interface MyStore extends MyStoreState, MyStoreActions {}
 
-const useStore = create<MyStore>((set): MyStoreState & MyStoreActions => ({
+export const useStore = create<MyStore>((set): MyStoreState & MyStoreActions => ({
   tableData: [],
   setTableData: (data: TableData[]): void =>
     set(
@@ -35,4 +35,3 @@ const useStore = create<MyStore>((set): MyStoreState & MyStoreActions => ({
     ),
 }));
 
-export default useStore;

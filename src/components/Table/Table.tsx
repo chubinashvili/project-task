@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 // store
-import useStore, { TableData } from "../../store/store";
+import { TableData, useStore } from "../../store";
 
 // api
 import axios from "axios";
