@@ -338,7 +338,7 @@ const Table: React.FC<Props> = () => {
                 message: "Please enter your phone number",
               },
               {
-                pattern: /^[a-zA-Z]+(\s?[a-zA-Z]+)*$/,
+                pattern: /^\+\d+$/,
                 message:
                   "Please enter a valid phone number (e.g. +995595999999)",
               },
